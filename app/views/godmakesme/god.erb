@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <title>신이 나를 만들때</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="bodyy">
+  
+   <br>
+    <br>
+     <br>
+  
+  
+  <div class="row">
+  <div class="col-xs-6 col-md-4 text-center">  </div>
+  
+  <div class="col-xs-6 col-md-4"> <h1 class="head"> <%=@header%> <small> by 이정영 </small></h1>
+  </div>
+  
+  <div class="col-xs-6 col-md-4">  </div>
+  
+</div>
+  
+  <br>
+   <br>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row2">
+  <div class="col-lg-4 col-sm-6">
+    <p class = "head2"> 먼저 <strong> [<%=@first_s%>] </strong>  을(를) 한 수푼 넣고 </p>  
+    <%= image_tag "aa.jpg" %>
+    
+  
+  </div>
+  
+  <div class="col-lg-4 col-sm-6">
+    <P class ="head3"> 그리고  <strong>  [<%=@second_s%>] </strong> 을(를) 두 수푼 넣고 </P>
+    <%= image_tag "bb.jpg" %>
+  </div>
+  
+  <div class="col-lg-4 col-sm-6">
+     <p class = "head4"> 마지막으로는 <strong> [<%=@finish_s%>]  </strong>  을(를) 그냥 콸콸콸... </p>
+     <%= image_tag "cc.jpg" %>
+  
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+    
